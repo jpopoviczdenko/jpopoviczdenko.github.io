@@ -111,12 +111,13 @@ nav a:hover {
     padding-bottom: 65px;
 }
 
-#inicio > p:first-child {
-    color: var(--color-secondary);
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    margin-bottom: 12px;
+#inicio {
+    min-height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 45px;
 }
 
 #inicio h2 {
@@ -313,7 +314,7 @@ footer {
     }
 
     section {
-        padding: 50px 7%;
+        padding: 38px 7%;
     }
 
     #inicio {
