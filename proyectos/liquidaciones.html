@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Automatización de liquidaciones | Josip Popovic</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Josip Popovic</h1>
+
+    <nav>
+        <a href="../index.html#inicio">Inicio</a>
+        <a href="../index.html#sobre-mi">Sobre mí</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#experiencia">Experiencia</a>
+        <a href="../index.html#habilidades">Competencias</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <!-- ========================================
+         INTRODUCCIÓN
+    ========================================= -->
+
+    <section class="project-detail">
+
+        <div class="project-detail-label">
+            PROYECTO · AUTOMATIZACIÓN
+        </div>
+
+        <h2>
+            Automatización de generación y distribución de liquidaciones
+        </h2>
+
+        <p class="project-detail-intro">
+            Automatización del proceso completo de generación y
+            distribución de liquidaciones por cliente, utilizando
+            información estructurada para generar documentos y
+            preparar automáticamente los correos correspondientes.
+        </p>
+
+
+        <div class="project-detail-impact">
+
+            <div>
+                <span>Antes</span>
+                <strong>Varias horas</strong>
+            </div>
+
+            <div>
+                <span>Después</span>
+                <strong>5–10 min</strong>
+            </div>
+
+            <div>
+                <span>Resultado</span>
+                <strong>Automatizado</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         CONTEXTO
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Contexto</h2>
+
+        <p>
+            El proceso requería generar documentos de liquidación
+            asociados a diferentes clientes y operaciones.
+        </p>
+
+        <p>
+            La liquidación contiene la información correspondiente
+            al importe que debe ser pagado al cliente o canal por
+            concepto de una comisión o servicio.
+        </p>
+
+        <p>
+            Para iniciar el proceso se utilizaba una tabla con la
+            información necesaria de cada operación, incluyendo
+            datos del cliente, RUC, canal, importe y otros campos
+            requeridos para generar la liquidación.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         EL PROBLEMA
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>El problema</h2>
+
+        <p>
+            El proceso manual requería generar las liquidaciones
+            individualmente y posteriormente preparar los correos
+            correspondientes para cada cliente.
+        </p>
+
+        <p>
+            Debido a la naturaleza repetitiva del proceso, la
+            ejecución podía consumir varias horas y existía riesgo
+            de cometer errores u omisiones.
+        </p>
+
+        <div class="result-highlight">
+
+            <strong>El reto</strong>
+
+            <span>
+                Reducir el trabajo manual y disminuir el riesgo de
+                omisiones durante la generación y distribución de
+                las liquidaciones.
+            </span>
+
+        </div>
+
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Omisiones</h3>
+
+                <p>
+                    Posibilidad de olvidar el envío de alguna
+                    liquidación.
+                </p>
+            </div>
+
+            <div>
+                <h3>Adjuntos</h3>
+
+                <p>
+                    Riesgo de olvidar incorporar algún documento
+                    al correo.
+                </p>
+            </div>
+
+            <div>
+                <h3>Digitación</h3>
+
+                <p>
+                    Posibilidad de introducir incorrectamente
+                    información durante el proceso.
+                </p>
+            </div>
+
+            <div>
+                <h3>Tiempo</h3>
+
+                <p>
+                    Varias horas dedicadas a tareas repetitivas
+                    de generación y distribución.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         SOLUCIÓN
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>La solución</h2>
+
+        <p>
+            Se desarrolló una automatización en Excel/VBA capaz de
+            procesar la información de entrada, identificar los
+            datos correspondientes a cada cliente y generar las
+            liquidaciones necesarias.
+        </p>
+
+        <p>
+            Una vez generados los documentos, la solución prepara
+            la distribución mediante Outlook, asociando a cada
+            cliente su destinatario, asunto, cuerpo del mensaje y
+            documento correspondiente.
+        </p>
+
+        <div class="process-flow">
+
+            <div>
+                <strong>01</strong>
+                <span>Input</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Procesamiento</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Identificación</span>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <span>Generación</span>
+            </div>
+
+            <div>
+                <strong>05</strong>
+                <span>Correo</span>
+            </div>
+
+            <div>
+                <strong>06</strong>
+                <span>Distribución</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         INPUT
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Información de entrada</h2>
+
+        <p>
+            La automatización utiliza una tabla estructurada como
+            fuente de información para procesar las liquidaciones.
+        </p>
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Cliente</h3>
+                <p>
+                    Identificación del cliente asociado a la
+                    liquidación.
+                </p>
+            </div>
+
+            <div>
+                <h3>RUC</h3>
+                <p>
+                    Identificador necesario para la documentación.
+                </p>
+            </div>
+
+            <div>
+                <h3>Canal</h3>
+                <p>
+                    Información correspondiente al canal asociado
+                    a la operación.
+                </p>
+            </div>
+
+            <div>
+                <h3>Importe</h3>
+                <p>
+                    Información económica utilizada para generar
+                    la liquidación.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         GENERACIÓN
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Generación de liquidaciones</h2>
+
+        <p>
+            A partir de la información procesada, la automatización
+            genera el documento de liquidación correspondiente a
+            cada cliente, considerando las reglas definidas para
+            el proceso.
+        </p>
+
+        <p>
+            Esto elimina la necesidad de preparar manualmente cada
+            documento y permite generar las liquidaciones a partir
+            de una única fuente estructurada de información.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         DISTRIBUCIÓN
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Distribución automática</h2>
+
+        <p>
+            Una vez generadas las liquidaciones, la solución
+            utiliza Outlook para preparar el correo correspondiente
+            a cada cliente.
+        </p>
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Destinatario</h3>
+
+                <p>
+                    Asociado automáticamente al cliente
+                    correspondiente.
+                </p>
+            </div>
+
+            <div>
+                <h3>Asunto</h3>
+
+                <p>
+                    Generado según las reglas definidas para el
+                    proceso.
+                </p>
+            </div>
+
+            <div>
+                <h3>Cuerpo</h3>
+
+                <p>
+                    Preparado automáticamente con la estructura
+                    correspondiente.
+                </p>
+            </div>
+
+            <div>
+                <h3>Adjuntos</h3>
+
+                <p>
+                    Se incorpora la liquidación correspondiente
+                    al cliente.
+                </p>
+            </div>
+
+        </div>
+
+        <p>
+            Cuando un cliente requiere un tratamiento particular,
+            la estructura permite realizar ajustes específicos
+            antes de completar el proceso.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         IMPACTO
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Impacto</h2>
+
+        <p>
+            La automatización transformó un proceso que requería
+            varias horas de trabajo en una ejecución de
+            aproximadamente 5–10 minutos.
+        </p>
+
+        <div class="result-highlight">
+
+            <strong>Varias horas → 5–10 minutos</strong>
+
+            <span>
+                Reducción significativa del tiempo dedicado a la
+                generación y distribución de liquidaciones.
+            </span>
+
+        </div>
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Eficiencia</h3>
+
+                <p>
+                    Reducción significativa del tiempo de ejecución.
+                </p>
+            </div>
+
+            <div>
+                <h3>Menos tareas manuales</h3>
+
+                <p>
+                    Automatización de la generación y preparación
+                    de correos.
+                </p>
+            </div>
+
+            <div>
+                <h3>Menos omisiones</h3>
+
+                <p>
+                    Reducción del riesgo de olvidar envíos o
+                    documentos.
+                </p>
+            </div>
+
+            <div>
+                <h3>Estandarización</h3>
+
+                <p>
+                    Estructura uniforme para la distribución de
+                    las liquidaciones.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         MI PARTICIPACIÓN
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Mi participación</h2>
+
+        <p>
+            Identifiqué la oportunidad de automatización y
+            participé en el diseño de la solución orientada a
+            reducir el trabajo manual del proceso.
+        </p>
+
+        <p>
+            Desarrollé la automatización, realicé pruebas y
+            correcciones, validé su funcionamiento y participé
+            en la implementación y capacitación del usuario.
+        </p>
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Análisis</h3>
+
+                <p>
+                    Identificación de tareas repetitivas y riesgos
+                    del proceso manual.
+                </p>
+            </div>
+
+            <div>
+                <h3>Diseño</h3>
+
+                <p>
+                    Definición del flujo de procesamiento y
+                    distribución.
+                </p>
+            </div>
+
+            <div>
+                <h3>Desarrollo</h3>
+
+                <p>
+                    Construcción de la automatización mediante
+                    Excel y VBA.
+                </p>
+            </div>
+
+            <div>
+                <h3>Validación</h3>
+
+                <p>
+                    Pruebas, correcciones e implementación de la
+                    solución en el proceso real.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         TECNOLOGÍAS
+    ========================================= -->
+
+    <section class="project-detail-section">
+
+        <h2>Tecnologías utilizadas</h2>
+
+        <div class="project-detail-grid">
+
+            <div>
+                <h3>Excel</h3>
+
+                <p>
+                    Fuente y estructura de información para el
+                    procesamiento.
+                </p>
+            </div>
+
+            <div>
+                <h3>VBA</h3>
+
+                <p>
+                    Automatización del procesamiento y generación
+                    de documentos.
+                </p>
+            </div>
+
+            <div>
+                <h3>Outlook</h3>
+
+                <p>
+                    Preparación y distribución automatizada de
+                    correos.
+                </p>
+            </div>
+
+            <div>
+                <h3>Automatización</h3>
+
+                <p>
+                    Integración de las diferentes etapas del
+                    proceso.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         CONFIDENCIALIDAD
+    ========================================= -->
+
+    <section class="project-detail-section confidentiality">
+
+        <h2>Confidencialidad</h2>
+
+        <p>
+            Por tratarse de una solución desarrollada dentro de un
+            entorno corporativo, la versión pública del proyecto
+            no expone información real de clientes, RUC, importes,
+            correos corporativos, documentos ni otros datos
+            confidenciales.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         NAVEGACIÓN
+    ========================================= -->
+
+    <section class="project-navigation">
+
+        <a href="../index.html#proyectos">
+            ← Volver a proyectos
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Josip Popovic
+    </p>
+
+</footer>
+
+</body>
+
+</html>
