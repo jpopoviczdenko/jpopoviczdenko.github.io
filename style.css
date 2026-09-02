@@ -1,4 +1,18 @@
 /* ========================================
+   VARIABLES DE MARCA
+======================================== */
+
+:root {
+    --color-primary: #123B4A;
+    --color-secondary: #167D9A;
+    --color-accent: #21B6A8;
+    --color-text: #263238;
+    --color-background: #F3F6F7;
+    --color-white: #FFFFFF;
+}
+
+
+/* ========================================
    CONFIGURACIÓN GENERAL
 ======================================== */
 
@@ -14,20 +28,45 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
-    color: #1f2937;
+    background-color: var(--color-background);
+    color: var(--color-text);
     line-height: 1.6;
 }
 
 
 /* ========================================
-   ENCABEZADO
+   CONTENEDOR PRINCIPAL
+======================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+section p {
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   HEADER
 ======================================== */
 
 header {
-    background-color: #111827;
-    color: white;
-    padding: 20px 8%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,90 +76,82 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 24px;
 }
 
 nav a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
-    font-size: 15px;
-    transition: opacity 0.3s ease;
+    font-size: 14px;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    opacity: 0.7;
+    color: var(--color-accent);
 }
 
 
 /* ========================================
-   CONTENIDO PRINCIPAL
-======================================== */
-
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 90px 8%;
-}
-
-section h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    color: #111827;
-}
-
-section p {
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-
-/* ========================================
-   INICIO / HERO
+   HERO
 ======================================== */
 
 #inicio {
-    min-height: 75vh;
+    min-height: 68vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 65px;
 }
 
 #inicio > p:first-child {
-    color: #2563eb;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    color: var(--color-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
 }
 
 #inicio h2 {
-    font-size: 48px;
-    line-height: 1.15;
-    max-width: 850px;
-    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 1.08;
+    max-width: 900px;
+    margin-bottom: 22px;
+    color: var(--color-primary);
+    letter-spacing: -1.5px;
+}
+
+#inicio p:nth-of-type(2) {
+    font-size: 18px;
+    color: var(--color-text);
+    opacity: 0.85;
+    max-width: 720px;
+    margin-bottom: 20px;
 }
 
 #inicio a {
     display: inline-block;
     width: fit-content;
-    margin-top: 15px;
-    padding: 12px 22px;
-    background-color: #2563eb;
-    color: white;
+    margin-top: 8px;
+    padding: 11px 20px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
     text-decoration: none;
     border-radius: 6px;
-    font-weight: bold;
-    transition: transform 0.2s ease;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 #inicio a:hover {
+    background-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
@@ -130,11 +161,14 @@ section p {
 ======================================== */
 
 #sobre-mi {
-    background-color: white;
+    background-color: var(--color-white);
+    border-top: 1px solid #DDE5E7;
+    border-bottom: 1px solid #DDE5E7;
 }
 
 #sobre-mi p {
-    font-size: 18px;
+    font-size: 17px;
+    color: var(--color-text);
 }
 
 
@@ -143,40 +177,52 @@ section p {
 ======================================== */
 
 #proyectos {
-    background-color: #f5f7fa;
+    background-color: var(--color-background);
 }
 
 #proyectos article {
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
+    background-color: var(--color-white);
+    padding: 26px 28px;
+    margin-bottom: 18px;
+    border: 1px solid #DDE5E7;
+    border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #proyectos article:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18, 59, 74, 0.10);
 }
 
 #proyectos h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+#proyectos article p {
+    color: var(--color-text);
+    opacity: 0.8;
+    margin-bottom: 10px;
 }
 
 #proyectos strong {
     display: inline-block;
-    margin: 10px 0;
-    color: #2563eb;
-    font-size: 18px;
+    margin: 5px 0 10px;
+    color: var(--color-accent);
+    font-size: 17px;
 }
 
 #proyectos article a {
-    color: #2563eb;
+    color: var(--color-secondary);
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#proyectos article a:hover {
+    color: var(--color-primary);
 }
 
 
@@ -185,7 +231,19 @@ section p {
 ======================================== */
 
 #experiencia {
-    background-color: white;
+    background-color: var(--color-white);
+    border-top: 1px solid #DDE5E7;
+}
+
+#experiencia h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+#experiencia p {
+    color: var(--color-text);
+    opacity: 0.8;
 }
 
 
@@ -194,7 +252,12 @@ section p {
 ======================================== */
 
 section:not(#inicio):not(#sobre-mi):not(#proyectos):not(#experiencia):not(#contacto) {
-    background-color: #f5f7fa;
+    background-color: var(--color-background);
+}
+
+section:not(#inicio):not(#sobre-mi):not(#proyectos):not(#experiencia):not(#contacto) p {
+    color: var(--color-text);
+    font-size: 16px;
 }
 
 
@@ -203,12 +266,17 @@ section:not(#inicio):not(#sobre-mi):not(#proyectos):not(#experiencia):not(#conta
 ======================================== */
 
 #contacto {
-    background-color: #111827;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 #contacto h2 {
-    color: white;
+    color: var(--color-white);
+}
+
+#contacto p {
+    color: var(--color-white);
+    opacity: 0.85;
 }
 
 
@@ -217,37 +285,54 @@ section:not(#inicio):not(#sobre-mi):not(#proyectos):not(#experiencia):not(#conta
 ======================================== */
 
 footer {
-    background-color: #0b1120;
-    color: #9ca3af;
+    background-color: #0C2933;
+    color: var(--color-white);
+    opacity: 0.95;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
+    font-size: 13px;
 }
 
 
 /* ========================================
-   RESPONSIVE - CELULARES
+   RESPONSIVE
 ======================================== */
 
 @media (max-width: 768px) {
 
     header {
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        gap: 12px;
+        padding: 16px 20px;
     }
 
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
 
     section {
-        padding: 60px 7%;
+        padding: 50px 7%;
+    }
+
+    #inicio {
+        min-height: 75vh;
+        padding-top: 60px;
+        padding-bottom: 50px;
     }
 
     #inicio h2 {
         font-size: 36px;
+        letter-spacing: -0.8px;
+    }
+
+    #inicio p:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    #proyectos article {
+        padding: 22px;
     }
 
 }
