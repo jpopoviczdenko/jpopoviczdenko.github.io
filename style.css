@@ -49,8 +49,21 @@ section {
 
 section h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-bottom: 12px;
     color: var(--color-primary);
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 3px;
+    background-color: var(--color-accent);
+    margin-top: 10px;
+    border-radius: 2px;
 }
 
 section p {
