@@ -79,19 +79,20 @@ section p {
 header {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 18px 8%;
+    padding: 15px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 header h1 {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
 }
 
 nav {
