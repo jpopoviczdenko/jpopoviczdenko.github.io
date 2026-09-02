@@ -640,3 +640,245 @@ footer {
     }
 
 }
+/* ========================================
+DETALLE DE PROYECTO
+======================================== */
+
+.project-detail {
+padding-top: 70px;
+padding-bottom: 55px;
+}
+
+.project-detail-label {
+color: var(--color-secondary);
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+margin-bottom: 14px;
+}
+
+.project-detail h2 {
+font-size: 46px;
+line-height: 1.1;
+max-width: 900px;
+margin-bottom: 22px;
+}
+
+.project-detail-intro {
+font-size: 18px;
+line-height: 1.7;
+max-width: 800px;
+color: var(--color-text);
+opacity: 0.82;
+}
+
+/* ========================================
+IMPACTO
+======================================== */
+
+.project-detail-impact {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 14px;
+max-width: 850px;
+margin-top: 35px;
+}
+
+.project-detail-impact div {
+background-color: var(--color-white);
+border: 1px solid #DDE5E7;
+border-radius: 8px;
+padding: 18px 20px;
+}
+
+.project-detail-impact span {
+display: block;
+color: var(--color-secondary);
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 5px;
+}
+
+.project-detail-impact strong {
+color: var(--color-primary);
+font-size: 22px;
+}
+
+/* ========================================
+SECCIONES DEL PROYECTO
+======================================== */
+
+.project-detail-section {
+background-color: var(--color-white);
+border-top: 1px solid #DDE5E7;
+}
+
+.project-detail-section h2 {
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.project-detail-section p {
+max-width: 800px;
+font-size: 16px;
+line-height: 1.75;
+color: var(--color-text);
+opacity: 0.82;
+}
+
+/* ========================================
+FLUJO DEL PROCESO
+======================================== */
+
+.process-flow {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+gap: 10px;
+margin-top: 30px;
+}
+
+.process-flow div {
+background-color: var(--color-background);
+border: 1px solid #DDE5E7;
+border-radius: 6px;
+padding: 15px 10px;
+text-align: center;
+}
+
+.process-flow strong {
+display: block;
+color: var(--color-accent);
+font-size: 12px;
+margin-bottom: 5px;
+}
+
+.process-flow span {
+color: var(--color-primary);
+font-size: 12px;
+font-weight: 600;
+}
+
+/* ========================================
+GRID DE FUNCIONAMIENTO
+======================================== */
+
+.project-detail-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin-top: 25px;
+}
+
+.project-detail-grid div {
+background-color: var(--color-background);
+border: 1px solid #DDE5E7;
+border-radius: 8px;
+padding: 20px;
+}
+
+.project-detail-grid h3 {
+color: var(--color-primary);
+font-size: 17px;
+margin-bottom: 8px;
+}
+
+.project-detail-grid p {
+font-size: 14px;
+margin-bottom: 0;
+}
+
+/* ========================================
+RESULTADO
+======================================== */
+
+.result-highlight {
+max-width: 650px;
+margin-top: 25px;
+padding: 22px;
+background-color: #F0F7F8;
+border-left: 4px solid var(--color-accent);
+border-radius: 4px;
+}
+
+.result-highlight strong {
+display: block;
+color: var(--color-primary);
+font-size: 26px;
+margin-bottom: 5px;
+}
+
+.result-highlight span {
+color: var(--color-text);
+font-size: 14px;
+}
+
+/* ========================================
+CONFIDENCIALIDAD
+======================================== */
+
+.confidentiality {
+background-color: var(--color-background);
+}
+
+.confidentiality p {
+opacity: 0.7;
+font-size: 14px;
+}
+
+/* ========================================
+NAVEGACIÓN
+======================================== */
+
+.project-navigation {
+background-color: var(--color-background);
+padding-top: 30px;
+padding-bottom: 45px;
+}
+
+.project-navigation a {
+color: var(--color-secondary);
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+}
+
+.project-navigation a:hover {
+color: var(--color-primary);
+}
+
+/* ========================================
+RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+```
+.project-detail {
+    padding-top: 45px;
+}
+
+.project-detail h2 {
+    font-size: 36px;
+}
+
+.project-detail-intro {
+    font-size: 16px;
+}
+
+.project-detail-impact {
+    grid-template-columns: 1fr;
+}
+
+.process-flow {
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-detail-grid {
+    grid-template-columns: 1fr;
+}
+```
+
+}
+
