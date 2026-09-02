@@ -844,7 +844,7 @@ font-size: 14px;
 font-weight: 600;
 }
 
-.project-navigation a:hover {
+.project-navigation a {
 color: var(--color-primary);
 }
 
@@ -854,7 +854,6 @@ RESPONSIVE
 
 @media (max-width: 768px) {
 
-```
 .project-detail {
     padding-top: 45px;
 }
@@ -878,7 +877,5 @@ RESPONSIVE
 .project-detail-grid {
     grid-template-columns: 1fr;
 }
-```
 
 }
-
