@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Automatización de comunicaciones operativas | Josip Popovic</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Josip Popovic</h1>
+
+<nav>
+    <a href="../index.html#inicio">Inicio</a>
+    <a href="../index.html#sobre-mi">Sobre mí</a>
+    <a href="../index.html#proyectos">Proyectos</a>
+    <a href="../index.html#experiencia">Experiencia</a>
+    <a href="../index.html#habilidades">Competencias</a>
+    <a href="../index.html#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<main>
+
+<!-- ========================================
+     INTRODUCCIÓN
+========================================= -->
+
+<section class="project-detail">
+
+    <div class="project-detail-label">
+        PROYECTO · AUTOMATIZACIÓN OPERATIVA
+    </div>
+
+    <h2>
+        Automatización de comunicaciones operativas
+    </h2>
+
+    <p class="project-detail-intro">
+        Diseño y desarrollo de una herramienta interna para
+        centralizar y automatizar el envío de comunicaciones
+        operativas recurrentes mediante plantillas y scripts
+        integrados con Outlook.
+    </p>
+
+
+    <div class="project-detail-impact">
+
+        <div>
+            <span>Antes</span>
+            <strong>~5 min</strong>
+        </div>
+
+        <div>
+            <span>Después</span>
+            <strong>~1 min</strong>
+        </div>
+
+        <div>
+            <span>Reducción</span>
+            <strong>~80%</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     CONTEXTO
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Contexto</h2>
+
+    <p>
+        Dentro de la operación existían comunicaciones que debían
+        enviarse de manera recurrente, con estructuras similares
+        y dependiendo de la frecuencia o situación operativa.
+    </p>
+
+    <p>
+        Estas comunicaciones podían ser diarias, semanales o
+        mensuales y requerían preparar manualmente el contenido
+        del correo antes de enviarlo.
+    </p>
+
+    <p>
+        Para facilitar esta actividad, desarrollé una herramienta
+        que centraliza diferentes plantillas y automatizaciones
+        dentro de una única interfaz.
+    </p>
+
+</section>
+
+
+<!-- ========================================
+     EL PROBLEMA
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>El problema</h2>
+
+    <p>
+        La preparación individual de los correos generaba trabajo
+        repetitivo, especialmente cuando se trataba de
+        comunicaciones recurrentes con estructuras similares.
+    </p>
+
+    <p>
+        El proceso manual también implicaba buscar la plantilla
+        correspondiente, copiar información, preparar el mensaje
+        y configurar los elementos necesarios antes del envío.
+    </p>
+
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>Repetitividad</h3>
+
+            <p>
+                Preparación frecuente de comunicaciones con
+                estructuras similares.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Tiempo</h3>
+
+            <p>
+                Aproximadamente 5 minutos para preparar una
+                comunicación.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Consistencia</h3>
+
+            <p>
+                Riesgo de utilizar estructuras diferentes o
+                modificar incorrectamente una plantilla.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Accesibilidad</h3>
+
+            <p>
+                Necesidad de localizar manualmente la plantilla
+                o estructura correspondiente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="result-highlight">
+
+        <strong>El reto</strong>
+
+        <span>
+            Centralizar las comunicaciones recurrentes y reducir
+            el tiempo necesario para preparar los correos.
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     LA SOLUCIÓN
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>La solución</h2>
+
+    <p>
+        Diseñé y desarrollé una pequeña aplicación basada en HTA
+        que funciona como un punto central de acceso a diferentes
+        scripts y plantillas de comunicación.
+    </p>
+
+    <p>
+        La herramienta reúne aproximadamente 20–30 tipos de
+        comunicaciones utilizadas con diferentes frecuencias
+        dentro de la operación.
+    </p>
+
+    <p>
+        Dependiendo del tipo de comunicación, la herramienta puede
+        generar el correo listo para revisión o ejecutar
+        directamente el envío cuando el flujo lo permite.
+    </p>
+
+
+    <div class="process-flow">
+
+        <div>
+            <strong>01</strong>
+            <span>Seleccionar</span>
+        </div>
+
+        <div>
+            <strong>02</strong>
+            <span>Preparar</span>
+        </div>
+
+        <div>
+            <strong>03</strong>
+            <span>Validar</span>
+        </div>
+
+        <div>
+            <strong>04</strong>
+            <span>Enviar</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     FUNCIONAMIENTO
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Cómo funciona</h2>
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>01 · Selección</h3>
+
+            <p>
+                El usuario selecciona desde la interfaz la
+                comunicación que necesita realizar.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>02 · Preparación</h3>
+
+            <p>
+                El sistema utiliza la plantilla y lógica
+                correspondiente para construir el correo.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>03 · Validación</h3>
+
+            <p>
+                Las comunicaciones que requieren información
+                adicional pueden ser revisadas o modificadas
+                antes del envío.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>04 · Envío</h3>
+
+            <p>
+                El correo se genera y, según el tipo de
+                comunicación, queda listo para envío o se ejecuta
+                automáticamente.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     ARQUITECTURA
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Arquitectura de la solución</h2>
+
+    <p>
+        La herramienta integra diferentes tecnologías para
+        proporcionar una interfaz sencilla y centralizar la lógica
+        de las comunicaciones.
+    </p>
+
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>HTA</h3>
+
+            <p>
+                Interfaz utilizada para centralizar las diferentes
+                opciones de comunicación.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>HTML / CSS</h3>
+
+            <p>
+                Construcción y presentación de la interfaz de la
+                aplicación.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>JavaScript</h3>
+
+            <p>
+                Lógica de interacción y control de las diferentes
+                funcionalidades.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>VBS</h3>
+
+            <p>
+                Automatización de tareas y ejecución de acciones
+                relacionadas con el entorno operativo.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Outlook</h3>
+
+            <p>
+                Integración utilizada para generar y gestionar las
+                comunicaciones.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     TIPOS DE COMUNICACIONES
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Tipos de comunicaciones</h2>
+
+    <p>
+        La herramienta centraliza aproximadamente 20–30
+        comunicaciones y plantillas utilizadas en diferentes
+        momentos de la operación.
+    </p>
+
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>Diarias</h3>
+
+            <p>
+                Comunicaciones asociadas a actividades recurrentes
+                de la operación.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Semanales</h3>
+
+            <p>
+                Mensajes utilizados para seguimiento y actividades
+                periódicas.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Mensuales</h3>
+
+            <p>
+                Comunicaciones asociadas a procesos de cierre o
+                actividades periódicas.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Casos específicos</h3>
+
+            <p>
+                Plantillas utilizadas cuando se requiere una
+                comunicación particular dentro del proceso.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     IMPACTO
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Impacto</h2>
+
+    <p>
+        La herramienta redujo el tiempo aproximado de preparación
+        de una comunicación de 5 minutos a cerca de 1 minuto,
+        dependiendo del tipo de mensaje.
+    </p>
+
+
+    <div class="result-highlight">
+
+        <strong>5 min → 1 min</strong>
+
+        <span>
+            Reducción aproximada del 80% en el tiempo de preparación
+            de las comunicaciones automatizadas.
+        </span>
+
+    </div>
+
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>Eficiencia</h3>
+
+            <p>
+                Menor tiempo dedicado a preparar comunicaciones
+                recurrentes.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Estandarización</h3>
+
+            <p>
+                Centralización de plantillas y estructuras de
+                comunicación.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Accesibilidad</h3>
+
+            <p>
+                Acceso centralizado a las diferentes comunicaciones
+                desde una única herramienta.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Reutilización</h3>
+
+            <p>
+                Capacidad de reutilizar la misma estructura para
+                diferentes comunicaciones y frecuencias.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     MI PARTICIPACIÓN
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Mi participación</h2>
+
+    <p>
+        Identifiqué la oportunidad de centralizar y automatizar
+        comunicaciones recurrentes que requerían trabajo manual
+        dentro de la operación.
+    </p>
+
+    <p>
+        Diseñé y desarrollé la estructura de la herramienta,
+        integrando la interfaz, las plantillas y los scripts
+        necesarios para automatizar las diferentes comunicaciones.
+    </p>
+
+    <p>
+        También realicé pruebas, ajustes y validaciones para
+        asegurar que las diferentes opciones funcionaran
+        correctamente dentro del flujo operativo.
+    </p>
+
+
+    <div class="project-detail-grid">
+
+        <div>
+
+            <h3>Análisis</h3>
+
+            <p>
+                Identificación de comunicaciones repetitivas y
+                oportunidades de automatización.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Diseño</h3>
+
+            <p>
+                Definición de la estructura de la herramienta y
+                organización de las diferentes plantillas.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Desarrollo</h3>
+
+            <p>
+                Construcción de la interfaz e integración de
+                scripts y funcionalidades.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Validación</h3>
+
+            <p>
+                Pruebas, correcciones y adaptación de la herramienta
+                al funcionamiento operativo.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     RESULTADO
+========================================= -->
+
+<section class="project-detail-section">
+
+    <h2>Resultado</h2>
+
+    <p>
+        La solución permitió centralizar diferentes comunicaciones
+        operativas dentro de una única herramienta, reduciendo el
+        tiempo de preparación y disminuyendo la dependencia de
+        tareas manuales repetitivas.
+    </p>
+
+    <p>
+        Además, la centralización facilitó el acceso a las
+        diferentes plantillas y contribuyó a mantener una
+        estructura más uniforme en las comunicaciones recurrentes.
+    </p>
+
+</section>
+
+
+<!-- ========================================
+     CONFIDENCIALIDAD
+========================================= -->
+
+<section class="project-detail-section confidentiality">
+
+    <h2>Confidencialidad</h2>
+
+    <p>
+        Por tratarse de una herramienta desarrollada dentro de un
+        entorno corporativo, la versión pública del proyecto no
+        expone correos reales, destinatarios, información de
+        clientes, plantillas corporativas ni scripts internos.
+    </p>
+
+    <p>
+        La descripción presentada utiliza una estructura
+        conceptual para explicar el funcionamiento y el impacto
+        de la solución sin revelar información sensible.
+    </p>
+
+</section>
+
+
+<!-- ========================================
+     NAVEGACIÓN
+========================================= -->
+
+<section class="project-navigation">
+
+    <a href="../index.html#proyectos">
+        ← Volver a proyectos
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+    © 2026 Josip Popovic
+</p>
+
+</footer>
+
+</body>
+
+</html>
